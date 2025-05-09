@@ -1,0 +1,114 @@
+.Admin_Top_header_container {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99999999;
+    padding: .625rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 20, .08),
+        0 1px 2px rgba(0, 0, 20, .08);
+}
+
+
+.Admin_Top_left_Container {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.Admin_Top_left_Icon {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(105, 102, 102);
+    width: 50px;
+}
+
+
+
+.Admin_Top_left_SearchBar {
+    width: 70%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(197, 193, 193, 0.545);
+    border-radius: 8px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.Admin_Top_left_SearchBar svg {
+    font-size: 20px;
+}
+
+.Admin_Top_left_SearchBar input {
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 16px;
+}
+
+/* ......................... Header - Right..................... */
+
+
+.Admin_Top_Right_Container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.Top_Right_Notification_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Top_Right_Notification_icon:hover {
+    background-color: #cbd5e1;
+}
+
+.Top_Right_Profile {
+    border-radius: 50%;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+.Top_Right_Profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+
+}
+
+.Top_Right_Profile:before {
+    border: 2px solid white;
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    display: table;
+    height: 20%;
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    background-color: green;
+}

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.Product_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    gap: 10px;
+    margin-top: 20px;
+    font-family: "PT Sans", sans-serif !important;
+}
+
+.Products_box {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(247, 243, 243);
+    position: relative;
+}
+
+.Products_box:hover {
+    box-shadow: 2px 3px 10px -5px black;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.Products_box:hover .image_container_Wishlist_icon_box {
+    opacity: 100;
+}
+
+.Products_box:hover .text_Price_box button {
+    background-color: rgba(255, 0, 0, 0.743);
+    color: white;
+}
+
+.Products_box:hover .Products_box_text_container span::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+
+
+/*.................................................... Product Image */
+
+.Products_box_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 60%;
+}
+
+.Products_box_image_container img {
+    width: 70%;
+    height: 100%;
+    image-resolution: calc(240 / 258 * 100%);
+}
+
+.image_container_Wishlist_icon_box {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(224, 223, 223, 0.603);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.image_container_Wishlist_icon_box:hover {
+    background-color: rgba(224, 223, 223, 0.983);
+}
+
+.image_container_Wishlist_icon:hover {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(1.25);
+    }
+
+    28% {
+        transform: scale(1);
+    }
+
+    42% {
+        transform: scale(1.25);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}
+
+
+
+/*....................................................... Product text content */
+
+.Products_box_text_container {
+    margin-top: 10px;
+    max-height: 300px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.text_Rating_box {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.text_Rating_box_icon {
+    color: rgb(252, 146, 49);
+
+}
+
+.text_Rating_box p {
+    color: rgba(0, 0, 0, 0.524);
+    margin-left: 10px;
+    font-family: "PT Sans", sans-serif !important;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.Products_box_text_container span {
+    font-size: 16px;
+    position: relative;
+    font-weight: 500;
+}
+
+
+.Products_box_text_container span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: -3px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Products_box_text_container span:not(:hover)::before {
+    transform-origin: right;
+}
+
+/* .......................... price and cart button.................. */
+.text_Price_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.text_Price_box h4 {
+    font-family: "PT Sans", sans-serif !important;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+.text_Price_box button {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(224, 223, 223, 0.603);
+}
+
+
+
+.text_Price_box_cart_icon {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.text_Price_box_cart_icon:hover {
+    animation: slideLeftRight 0.5s ease-in-out;
+    color: white;
+}
+
+
+@keyframes slideLeftRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    45% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* ............................product detailed............. */
+.Products_box_detailed {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: rgb(247, 243, 243);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 95%;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0 10px;
+}
+
+
+.Products_box:hover .Products_box_detailed {
+    max-height: 300px;
+    overflow: visible;
+}
+
+.specs-container {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.818);
+    margin-bottom: 5px;
+
+
+}
+
+.spec-title,
+.spec-value {
+    font-family: "PT Sans", sans-serif !important;
+}
+
+.spec-dotted {
+    flex-grow: 1;
+    border-bottom: 1px dotted #bbb;
+    margin: 0 10px;
+    font-family: "PT Sans", sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
+
+

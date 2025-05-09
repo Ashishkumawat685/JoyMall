@@ -1,0 +1,128 @@
+.AdminHeader {
+    width: 100%;
+    display: flex;
+}
+
+
+.pages {
+    margin-left: 25%;
+    width: 75%;
+    transition: 0.3s ease-in-out;
+}
+
+.pages_full {
+    margin-left: 0;
+    width: 100%;
+}
+
+
+
+/* left Header.......................................... */
+.main_header {
+    width: 25%;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    scrollbar-width: none;
+    z-index: 999;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px;
+
+}
+
+
+
+.main_Header_toggle_display {
+    width: 0%;
+    transform: translateX(-300px);
+}
+
+
+.Admin_Header_logo {
+    height: 70px;
+    width: 90%;
+}
+
+.Admin_Header_logo img {
+    height: 80%;
+}
+
+
+
+.AdminLeftHeader ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.AdminLeftHeader ul li {
+    padding: 8px 0px;
+    min-height: 40px;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+}
+
+
+
+
+
+.Admin_nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.Admin_nav_menu_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.admin_nav_menu_downArrow {
+    color: #475569 !important;
+    font-size: 13px;
+}
+
+.Admin_nav_menu_name a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.Admin_nav_menu_name a:hover {
+    color: #624bff;
+}
+
+.Admin_nav_menu svg {
+    color: #634bffc6;
+    transition: all 0.5s ease-in-out;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.Admin_nav_menu_Submenus {
+    margin-top: 10px;
+}
+
+.Admin_nav_menu_Submenus ul li {
+    padding: 8px 14px;
+    min-height: 40px;
+    list-style-type: disc !important;
+
+}
+
+.Admin_nav_menu_Submenus ul li a {
+    text-decoration: none;
+    color: #475569;
+    transition: 0.3s;
+}
+
+.Admin_nav_menu_Submenus ul li a:hover {
+    color: #624bff;
+}

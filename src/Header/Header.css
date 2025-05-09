@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    /* Optional: to bring it above other elements */
+}
+
+.popup-content {
+    background: #fff;
+
+    font-size: 16px;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Head_1_Section {
+    background: rgb(34, 41, 52);
+    height: 80px;
+}
+
+.Head_1_container {
+    width: 100%;
+    position: sticky;
+    z-index: 99;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.Head_2_categories_Logo {
+    display: none;
+}
+
+.Head_1_logo_box {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.Head_1_logo_icon {
+    background: rgb(202 22 43);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Head_1_logo_icon span {
+    font-size: 29px;
+    font-weight: 700;
+
+}
+
+
+
+.Head_1_logo_Name p {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-family: "Barriecito", "system-ui" !important;
+}
+
+
+
+.Head_1_menu_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+.Head_search_container_smallScreen {
+    display: none;
+}
+
+.Head_search_container {
+    width: 40%;
+    position: relative;
+}
+
+.Head_search_box {
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.Head_search_box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    color: white;
+    font-family: "Winky Sans", "sans-serif";
+    width: 85%;
+}
+
+.Head_search_box .Head_search_icon {
+    font-size: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    animation: targetAnimation 1s infinite;
+}
+
+@keyframes targetAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.Head_1_Right_items_containor {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.Head_Right_Sale_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.Head_Right_percentage_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgb(51, 61, 76);
+    cursor: pointer;
+}
+
+.Head_Right_percentage_box .Head_Right_percentage_icon {
+    color: rgb(202, 22, 43);
+    font-size: 22px;
+    font-weight: 800;
+    transition: 0.1s;
+}
+
+
+
+@keyframes zigzag {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(2px) translateY(-2px);
+    }
+
+    50% {
+        transform: translateX(-2px) translateY(2px);
+    }
+
+    75% {
+        transform: translateX(2px) translateY(-2px);
+    }
+}
+
+.Head_Right_percentage_box .Head_Right_percentage_icon:hover {
+    animation: zigzag 0.5s ease-in-out;
+    color: red;
+}
+
+.Head_Right_Sale_content p {
+    color: rgba(255, 255, 255, 0.606);
+    font-size: 14px;
+}
+
+.Head_Right_Sale_content h3 {
+    font-weight: 400;
+}
+
+
+.Head_1_Right_icon_container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    position: relative;
+}
+
+.Head_1_Right_Dark_icon_box,
+.Head_1_Right_Account_icon_box,
+.Head_1_Right_wishlist_icon_box {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Head_1_Right_Search_icon_box {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Head_1_Right_cart_icon_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background: rgb(51, 61, 76);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.Head_1_Right_cart_icon_box a,
+.Head_1_Right_wishlist_icon_box a {
+    text-decoration: none;
+    color: white;
+}
+
+.Head_1_Right_icon_container p {
+    background: green;
+    height: 23px;
+    width: 23px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 12px;
+    right: -6px;
+    top: 0;
+    border: 2.5px solid rgb(34, 41, 52)
+}
+
+
+/* Header - 2............................................. */
+.Head_2_Section {
+    background: rgb(34, 41, 52);
+    height: 50px;
+    width: 100%;
+}
+
+.Head_2_container {
+    display: flex;
+    color: white;
+    height: 50px;
+}
+
+
+
+/* .......................................categories container....................... */
+
+.categories_container_main {
+    width: 25%;
+    position: relative;
+}
+
+.Head_2_categories {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgb(51, 61, 76);
+    cursor: pointer;
+    height: 50px;
+    color: white;
+    margin-left: 3%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Head_2_categories_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Head_2_categories_text_icon {
+    font-size: 22px;
+}
+
+
+
+
+
+
+.Head_2_categories_down_icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+
+
+.Head_2_categories_dropdown {
+    position: absolute;
+    top: 50px;
+    left: 3%;
+    width: 97%;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    color: black;
+    z-index: 10;
+}
+
+.block {
+    max-height: 900px;
+    overflow: visible;
+
+}
+
+.Head_2_categorie_below_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.Head_2_categorie_below_box:hover {
+    background: #f1f1f1;
+}
+
+.Head_2_categorie_below_box_content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Head_2_categorie_below_box_ArrowRight {
+    font-size: 18px;
+}
+
+
+
+.Head_2_categories_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.Head_2_categories_text p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.Head_2_categories_text_icon {
+    font-size: 23px;
+}
+
+.Head_2_categories_down_icon {
+    font-size: 20px;
+}
+
+.Head_2_categories_down_icon_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.Head_2_menus_containor {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    color: black;
+}
+
+.Head_2_menus_containor ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Head_2_menus_containor ul li {
+    list-style: none;
+}
+
+.Head_2_menus_containor ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.Head_2_menus_containor ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: -3px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Head_2_menus_containor ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.Head_2_menus_containor ul li a:not(:hover)::before {
+    transform-origin: right;
+}
+
+.Head_2_menus_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Head_2_menus_down_icon {
+    font-size: 22px;
+    margin-left: 5px;
+    margin-top: 2px;
+    color: white;
+}
+
+.Head_2_language_box {
+    margin-left: 50px;
+}
+
+.active {
+    color: gold !important;
+}
+
+
+
+
+/* .................................. Account Section dropdown............. */
+.Head_2_menus_box_Account {
+    position: relative;
+}

@@ -1,0 +1,154 @@
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    /* .................................................Login form................................... */
+
+
+
+    .login_container {
+        width: 100%;
+        height: 1000px;
+
+    }
+
+    .Login_content {
+        width: 90%;
+        height: 98%;
+    }
+
+    .left_box {
+        width: 100%;
+        height: 40%;
+        order: 2;
+    }
+
+    .left_box .left_box_content {
+        padding-left: 0px;
+
+    }
+
+
+
+    .right_box {
+        order: 1;
+        width: 100%;
+        height: 60%;
+    }
+
+    .right_box_container {
+        padding: 30px 10px 0px;
+    }
+
+
+    .Login_form {
+        width: 90%;
+    }
+
+    /* .................................................Header................................... */
+    .Head_1_Right_Account_icon_box,
+    .Head_1_Right_wishlist_icon_box {
+        display: block;
+    }
+
+    /* ................................. search Box.................................... */
+    .SearchHead {
+        top: 21%;
+    }
+
+    /* ..................................... Cart & wishlist............................................. */
+
+    .Cart_Products_content_bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .Cart_Products_Quantity {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .Cart_Products_Remove_Wishlist_box {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .Cart_Products_Remove_Wishlist_box button {
+        margin: 0 0px;
+    }
+
+
+
+
+    /* ..................................... Home............................................. */
+    /* ......................................Home Slide................................. */
+    .Slider_content {
+        flex-direction: column;
+    }
+
+    .Slide_box1 {
+        width: 100%;
+        order: 2;
+        margin-bottom: 20px;
+    }
+
+
+    .Slide_box2 {
+        width: 100%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .SwiperSlider_box img {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mySwiper2 {
+        height: 300px;
+    }
+
+
+    .SwiperSlider_box1 {
+        margin: 0 0px;
+    }
+
+    .SwiperSlider_box_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .SwiperSlider_box1 h1 {
+        text-align: center;
+    }
+
+    /* .......................................... Shop....................................... */
+    .Products_box {
+        width: 30%;
+    }
+
+
+    /* ..................................................Shop Product Details.................................... */
+
+
+
+    .General_Info_main {
+        flex-direction: column;
+
+    }
+
+    .General_Info_Product_left_container {
+        width: 100%;
+    }
+
+    .General_Info_Product_Right_container {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+}

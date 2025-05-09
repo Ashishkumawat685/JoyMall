@@ -1,0 +1,486 @@
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+
+    /* ............................. Header....................................................... */
+
+    .Head_1_logo_icon {
+        display: none;
+    }
+
+    .Head_1_logo_box {
+        margin-left: 0;
+    }
+
+    .Head_1_logo_Name p {
+        display: inline-block;
+        font-family: "Barriecito", "system-ui" !important;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .Head_1_menu_icon {
+        display: flex;
+    }
+
+    .Head_1_Right_icon_container {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Head_1_Right_items_containor {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+    }
+
+
+
+
+
+    .Head_search_container {
+        display: none;
+    }
+
+    .Head_Right_Sale_box {
+        display: none;
+    }
+
+
+    .Head_1_Right_Search_icon_box {
+        display: flex;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+
+    .Head_1_Section {
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+
+    .Head_search_container_smallScreen {
+        width: 90%;
+        margin: auto;
+        display: block;
+        position: relative;
+    }
+
+    .Head_search_box_smallScreen {
+        border: 1px solid white;
+        border-radius: 35px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .Head_search_box_smallScreen input {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 18px;
+        color: white;
+        font-family: "Winky Sans", "sans-serif";
+        width: 85%;
+    }
+
+    .Head_search_box_smallScreen .Head_search_icon_smallScreen {
+        font-size: 20px;
+        margin-right: 10px;
+        display: inline-block;
+        animation: targetAnimation 1s infinite;
+        color: white;
+    }
+
+    @keyframes targetAnimation {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+    /* Header - 2 .............................. */
+
+
+    .navShow {
+        transform: translateX(0px);
+    }
+
+    .navHide {
+        transform: translateX(-400px);
+    }
+
+    .Head_2_Section {
+        background: white;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 99;
+        width: 320px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-shadow: 14px -7px 50px -8px black;
+        transition: 0.3s ease-in-out;
+    }
+
+    .Head_2_container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+
+    }
+
+
+    /* ................................................categories section............................ */
+
+
+    .Head_2_categories_Logo {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0 10px 0;
+    }
+
+    .Head_2_categories_logo_exit_icon {
+        color: black;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .Head_2_categories_Logo_Name span {
+        font-size: 29px;
+        font-weight: 700;
+
+    }
+
+    .Head_2_categories_Logo_Name p {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        font-family: "Barriecito", "system-ui" !important;
+        color: black;
+        text-align: start;
+    }
+
+
+
+
+    .categories_container_main {
+        width: 90%;
+    }
+
+    .Head_2_categories {
+        margin-left: 0%;
+    }
+
+
+    .Head_2_categories_dropdown {
+        position: static;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .block {
+        max-height: 500px;
+    }
+
+    .Head_2_categories_down_icon {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .rotate-180 {
+        transform: rotate(180deg);
+    }
+
+
+
+
+
+    .Head_2_menus_containor {
+        width: 80%;
+
+    }
+
+    .Head_2_menus_containor ul {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .Head_2_menus_containor ul li {
+        width: 100%;
+        height: 35px;
+    }
+
+    .Head_2_menus_containor ul li a {
+        color: black;
+    }
+
+
+    .Head_2_menus_containor ul li a::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: black;
+        bottom: 0px;
+        left: -20px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .Head_2_menus_containor ul li a:hover::before {
+        transform: scaleY(1);
+    }
+
+    .Head_2_menus_containor ul li a:not(:hover)::before {
+        transform-origin: bottom;
+    }
+
+    .Head_2_menus_box {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .Head_2_language_box {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .Head_2_menus_down_icon {
+        color: black;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+
+    /* .................................................Login form................................... */
+
+
+
+    .login_container {
+        width: 100%;
+        height: 1000px;
+
+    }
+
+    .Login_content {
+        width: 90%;
+        height: 98%;
+    }
+
+    .left_box {
+        width: 100%;
+        height: 40%;
+        order: 2;
+    }
+
+    .left_box .left_box_content {
+        padding-left: 0px;
+
+    }
+
+
+
+    .right_box {
+        order: 1;
+        width: 100%;
+        height: 60%;
+    }
+
+    .right_box_container {
+        padding: 30px 10px 0px;
+    }
+
+
+    .Login_form {
+        width: 90%;
+    }
+
+
+    /* .................................................Header................................... */
+    .Head_1_Right_Account_icon_box,
+    .Head_1_Right_Dark_icon_box {
+        display: none;
+    }
+
+
+    /* ................................. search Box.................................... */
+    .SearchHead {
+        top: 25%;
+    }
+
+    /* ..................................... Cart & wishlist............................................. */
+
+    .CartShow {
+        flex-direction: column;
+    }
+
+
+    .Cart_Products_content_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Cart_Products_content_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Cart_Products_content_image img {
+        height: 80%;
+        width: 80%;
+    }
+
+    .Cart_Product_main_box {
+        margin-top: 10px;
+    }
+
+    .Cart_Products_content_details {
+        padding: 0;
+    }
+
+    .Cart_Products_content_bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .Cart_Products_Quantity {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .Cart_Products_Remove_Wishlist_box {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .Cart_Products_Remove_Wishlist_box button {
+        margin: 0 0px;
+    }
+
+    .Cart_Products_content_delivery {
+        margin-top: 10px;
+    }
+
+
+    /* ..................................... Home............................................. */
+    /* ......................................Home Slide................................. */
+    .Slider_content {
+        flex-direction: column;
+
+    }
+
+    .Slide_box1 {
+        width: 100%;
+        order: 2;
+        margin-bottom: 20px;
+    }
+
+
+    .Slide_box2 {
+        width: 100%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .SwiperSlider_box img {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mySwiper2 {
+        height: 300px;
+    }
+
+
+    .SwiperSlider_box1 {
+        margin: 0 0px;
+    }
+
+    .SwiperSlider_box_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .SwiperSlider_box1 h1 {
+        text-align: center;
+    }
+
+    /* ..................................................Shop.................................... */
+
+
+
+    .Products_box {
+        width: 47%;
+    }
+
+    .Products_box_detailed {
+        display: none;
+    }
+
+    /* ..................................................Shop Product Details.................................... */
+
+    .text_Rating_box {
+        display: none;
+    }
+
+    .General_Info_main {
+        flex-direction: column;
+
+    }
+
+    .General_Info_Product_left_container {
+        width: 100%;
+    }
+
+    .General_Info_Product_Right_container {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .Right_container_Quantity_container {
+        display: flex;
+        align-items: self-start;
+        gap: 30px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,73 @@
+.Account_Menus {
+    position: absolute;
+    top: 100%;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    margin-top: 15px;
+    min-height: 50px;
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border: 1px solid rgb(207, 201, 201);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.469);
+    z-index: 99;
+    padding: 10px;
+
+}
+
+.Account_Menus ul {
+    display: block;
+    flex-direction: column;
+}
+
+.Account_Menus ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.Account_Menus ul li:hover {
+    background-color: rgba(243, 240, 240, 0.531);
+}
+
+.Account_First_menu {
+    position: absolute;
+    top: 100%;
+    color: black;
+    left: 120px;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    margin-top: 15px;
+    min-height: 50px;
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border: 1px solid rgb(207, 201, 201);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.469);
+    z-index: 99;
+    padding: 10px;
+}
+
+.Account_First_menu ul {
+    display: block;
+    flex-direction: column;
+}
+
+.Account_First_menu ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.Account_First_menu ul li:hover {
+    background-color: rgba(243, 240, 240, 0.531);
+}
